@@ -2,7 +2,7 @@
 function isPalindrome(n){
     if( n < 0) return false;
     let rev =0;
-  let nCopy= n;
+  let nCopy= n;//creating the copy of original number
     while( n > 0){
         let rem = n % 10;
         rev = (rev * 10) + rem;
@@ -14,6 +14,6 @@ function isPalindrome(n){
      return rev === nCopy
 
 }
-let n =121;
+let n =-121;
 let res = isPalindrome(n);
 console.log(res)
