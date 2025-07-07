@@ -9,8 +9,8 @@ function isReverse(n){
         n =  Math.floor(n / 10);
     }
     let limit = Math.pow(2,31);
-    if(rev < limit || rev > -limit)return 0
-    
+    if(rev < limit || rev > -limit) return 0
+
     return rev === nCopy ? -rev : rev;
 }
 let revNumber = isReverse(-1234);
