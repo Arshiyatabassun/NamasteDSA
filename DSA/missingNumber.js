@@ -15,3 +15,5 @@ function missingNumber(nums,n){
 console.log(missingNumber([1,2,4,5],5))
 
 // console.log(missingNumber([4,0,1,2,5],5))
+//todolist
+//pagination
