@@ -7,10 +7,19 @@ function sum(n){
 
  //find the summ of all the elements in an array using recurrsion
 
- let arr = [5,3,2,0,1]
- function findSum(n){
-    if( n == 0) return arr[n];
-    return arr[n]  + findSum(n-1)
+//  let arr = [5,3,2,0,1]
+//  function findSum(n){
+//     if( n == 0) return arr[n];
+//     return arr[n]  + findSum(n-1)
 
- }
- console.log(findSum(arr.length-1))
+//  }
+//  console.log(findSum(arr.length-1))
+
+//find the sum off all the odd numbers in an array using recurrsion
+
+let arr=[5,3,2,0,1];
+function sumOfOdd(n){
+    let isOdd =((arr[n]%2 === 1))
+    if(n == 0) return isOdd?arr[n]:0;
+
+}
