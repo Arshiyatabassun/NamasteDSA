@@ -23,3 +23,26 @@ function sumOfOdd(n){
     if(n == 0) return isOdd?arr[n]:0;
 
 }
+
+
+
+
+const functional =(props)=>{ 
+                                
+    return (<>
+    <div>
+        <h1>Name:Arshiya</h1>
+        <h1>location:Bengaluru</h1>
+    </div>
+    </>)
+}
+
+export default functional;
+
+
+
+class UserClass extends React.Component{
+    render(){
+        return(<></>)
+    }
+}
