@@ -10,10 +10,12 @@ for(let i =0 ;i <strs.length;i++){
         //ex:[aet:[eat]]
     }
     else{
-    map[sotrtedStr].push(strs[i])//if the value already exists then push
+    map[sotrtedStr].push(strs[i])//if the sorted value already exists then push
     }
 }
 
 return [...Object.values(map)]
 }
 console.log(groupAnagram(["eat","tea","tan","ate","nat","bat"]))
+
+
