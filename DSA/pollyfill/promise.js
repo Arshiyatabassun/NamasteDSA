@@ -1,6 +1,8 @@
 
-const promise = new promise(function (resolve,reject)=>{4
-    retu4rn promis4e
-}
+const promise = new Promise((resolve,reject)=>{
+    resolve("Iam Promise")
+})
 
-}
+
+promise.then((res)=>console.log(res))
+promise.catch((err)=>console.log(err.message))
