@@ -29,3 +29,6 @@ function binarySearch(nums,target){
 // console.log(binarySearch(nums ,12))
 let nums =[-1,0,3,5,9,12]
 console.log(binarySearch(nums ,9))
+
+
+
