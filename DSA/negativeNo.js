@@ -11,4 +11,4 @@ function negativeNumbers(arr){
     return count;
 }
 
-console.log(negativeNumbers([2,9,17,0,1,10,4,8]))
+console.log(negativeNumbers([2,-9,-17,0,1,10,4,8]))
