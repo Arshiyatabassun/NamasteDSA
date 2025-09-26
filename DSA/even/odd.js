@@ -206,20 +206,38 @@
 
 //Move Zeros at the last
 
-function moveZeros(nums){
-    let x =0;
-    for(let i=0;i<nums.length;i++){
-        if(nums[i] !== 0){
-            nums[x]=nums[i];
-            x++;
+// function moveZeros(nums){
+//     let x =0;
+//     for(let i=0;i<nums.length;i++){
+//         if(nums[i] !== 0){
+//             nums[x]=nums[i];
+//             x++;
+//         }
+//     }
+//     for(let i =x ;i<nums.length;i++){
+//         nums[i] = 0;
+//     }
+//     return nums;
+// }
+// let nums =[0,1,0,3,12]
+// let res = moveZeros(nums);
+// console.log(res)
+// // console.log(moveZeros([0,1,0,3,12]))
+
+//MaxConsecutive Onces
+
+function MaxConsecutive(nums){
+    let cCount =0;
+    let maxCount =0;
+    for(let i =0 ;i < nums.length;i++){
+        if(nums[i] === 1){
+            cCount++;
+        }
+        else{
+            maxCount =Math.max(cCount,maxCount);
+            cCount =0;
         }
     }
-    for(let i =x ;i<nums.length;i++){
-        nums[i] = 0;
-    }
-    return nums;
+    return Math.max(cCount,maxCount)
 }
-let nums =[0,1,0,3,12]
-let res = moveZeros(nums);
-console.log(res)
-// console.log(moveZeros([0,1,0,3,12]))
+console.log(MaxConsecutive([0,1,1,0,0,0,1,1,1,1,1,1,0,1,0,1,0,1,1,1]))
