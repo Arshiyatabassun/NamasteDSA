@@ -226,18 +226,30 @@
 
 //MaxConsecutive Onces
 
-function MaxConsecutive(nums){
-    let cCount =0;
-    let maxCount =0;
-    for(let i =0 ;i < nums.length;i++){
-        if(nums[i] === 1){
-            cCount++;
-        }
-        else{
-            maxCount =Math.max(cCount,maxCount);
-            cCount =0;
-        }
+// function MaxConsecutive(nums){
+//     let cCount =0;
+//     let maxCount =0;
+//     for(let i =0 ;i < nums.length;i++){
+//         if(nums[i] === 1){
+//             cCount++;
+//         }
+//         else{
+//             maxCount =Math.max(cCount,maxCount);
+//             cCount =0;
+//         }
+//     }
+//     return Math.max(cCount,maxCount)
+// }
+// console.log(MaxConsecutive([0,1,1,0,0,0,1,1,1,1,1,1,0,1,0,1,0,1,1,1]))
+
+//Missing Number
+function missingNum(nums){
+    let n = nums.length;
+    let totalSum = n * (n + 1)/2
+    let partialSum = 0;
+    for(let i = 0 ;i < n; i++){
+        partialSum = partialSum + nums[i];
     }
-    return Math.max(cCount,maxCount)
+    return totalSum - partialSum;
 }
-console.log(MaxConsecutive([0,1,1,0,0,0,1,1,1,1,1,1,0,1,0,1,0,1,1,1]))
+console.log(missingNum([0,2,1,4]));
