@@ -192,14 +192,34 @@
 
 //reverse String
 
-function revString(arr){
-let len =arr.length;
-let  n =Math.floor(len/2)
-for(let i =0 ;i < n ;i++){
-   let temp =arr[i];
-   arr[i]=arr[len-1-i]
-   arr[len-1-i] = temp;
+// function revString(arr){
+// let len =arr.length;
+// let  n =Math.floor(len/2)
+// for(let i =0 ;i < n ;i++){
+//    let temp =arr[i];
+//    arr[i]=arr[len-1-i]
+//    arr[len-1-i] = temp;
+//     }
+//     return arr;
+// }
+// console.log(revString(["h","e","l","l","o"]))
+
+//Move Zeros at the last
+
+function moveZeros(nums){
+    let x =0;
+    for(let i=0;i<nums.length;i++){
+        if(nums[i] !== 0){
+            nums[x]=nums[i];
+            x++;
+        }
     }
-    return arr;
+    for(let i =x ;i<nums.length;i++){
+        nums[i] = 0;
+    }
+    return nums;
 }
-console.log(revString(["h","e","l","l","o"]))
+let nums =[0,1,0,3,12]
+let res = moveZeros(nums);
+console.log(res)
+// console.log(moveZeros([0,1,0,3,12]))
