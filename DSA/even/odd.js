@@ -242,14 +242,48 @@
 // }
 // console.log(MaxConsecutive([0,1,1,0,0,0,1,1,1,1,1,1,0,1,0,1,0,1,1,1]))
 
-//Missing Number
-function missingNum(nums){
-    let n = nums.length;
-    let totalSum = n * (n + 1)/2
-    let partialSum = 0;
-    for(let i = 0 ;i < n; i++){
-        partialSum = partialSum + nums[i];
-    }
-    return totalSum - partialSum;
-}
-console.log(missingNum([0,2,1,4]));
+// //Missing Number
+// function missingNum(nums){
+//     let n = nums.length;
+//     let totalSum = n * (n + 1)/2
+//     let partialSum = 0;
+//     for(let i = 0 ;i < n; i++){
+//         partialSum = partialSum + nums[i];
+//     }
+//     return totalSum - partialSum;
+// }
+// console.log(missingNum([0,2,1,4]));
+
+// function missNum(nums,n){
+//     const expectedSum =n * (n + 1)/2;
+
+//   const actualSum = nums.reduce((acc,curr)=>acc + curr,0)
+// return expectedSum - actualSum;
+// }
+
+// console.log(missNum([9,8,1,2,0,4,6,5,7],9))
+
+//recursion 
+// 1.print n , , to 1 using recursion
+
+// function print(n){
+//     if(n < 1){
+//         return;
+//     }
+//     console.log(n)
+//     n = n-1;
+//     print(n)
+// }
+// let n = 10;
+
+// print(n)
+
+// function printOneTon(x){
+    
+// if(x > n) return;
+//   console.log(x)
+//     printOneTon(++x)
+
+// }
+// let  n =10;
+// printOneTon(1)
