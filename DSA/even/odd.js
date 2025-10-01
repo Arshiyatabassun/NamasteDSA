@@ -290,20 +290,52 @@
 
 //sum of first N numbers
 
-function sumOfN(num){
+// function sumOfN(num){
     
-    if(num === 0) return 0;
-    return  num + sumOfN(num-1)
-}
-console.log(sumOfN(6))
+//     if(num === 0) return 0;
+//     return  num + sumOfN(num-1)
+// }
+// console.log(sumOfN(6))
 
 
 // sum of n numbers in an array
 
-function sumOfArray(n){
+// function sumOfArray(n){
 
-    if(n === 0) return arr[n];
-    return arr[n] +sumOfArray(n-1);
+//     if(n === 0) return arr[n];
+//     return arr[n] +sumOfArray(n-1);
+// }
+// let arr = [3,2,4,1]
+// console.log(sumOfArray(arr.length-1))
+
+//factorial of number
+
+// function findFact(n){
+
+//     if(n === 1) return 1;
+//     return n*findFact(n-1)
+// }
+// console.log(findFact(5))
+
+// power of 2
+
+// function findPowerOfTwo(num){
+//     if(num === 1) return ` even number`;
+//     else if(num % 2 !== 0 || num  < 1)return `not an even number`;
+//     return findPowerOfTwo(num/2)
+// }
+
+// console.log(findPowerOfTwo(5321))
+
+//sum of all the odd numbers in an array
+
+let arr = [0,2,3,4,5,7,6]
+function sumOfOdd(n){
+  let isOdd =arr[n]%2 !== 0;
+ if( n === 0) {
+    return isOdd ?  arr[n] : 0
+ }
+ return (isOdd ? arr[n]: 0 )+ sumOfOdd(n-1)
+ 
 }
-let arr = [3,2,4,1]
-console.log(sumOfArray(arr.length-1))
+console.log(sumOfOdd(arr.length -1))
