@@ -296,3 +296,14 @@ function sumOfN(num){
     return  num + sumOfN(num-1)
 }
 console.log(sumOfN(6))
+
+
+// sum of n numbers in an array
+
+function sumOfArray(n){
+
+    if(n === 0) return arr[n];
+    return arr[n] +sumOfArray(n-1);
+}
+let arr = [3,2,4,1]
+console.log(sumOfArray(arr.length-1))
