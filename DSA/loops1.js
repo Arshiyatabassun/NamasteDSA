@@ -90,6 +90,8 @@ function secondLargest(arr){
     return secondLargest;
 }
 // let arr =[10,3,5,8,9,2,-1,0,1];
-let arr =[10];
+// let arr =[10];
+let arr =[10,2]
+
 let res =secondLargest(arr);
 console.log(res);
