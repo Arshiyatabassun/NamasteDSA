@@ -96,7 +96,7 @@
 // let res =secondLargest(arr);
 // console.log(res);
 // Day-2
-//count the number of digits
+//1.count the number of digits
 
 // function digitCount(num){
 //     let count =0;
@@ -107,3 +107,39 @@
 //     return count;
 // }
 // console.log(digitCount(245))
+2.//Palindrome of a number
+
+// function palindromeNum(num){
+//     let rev = 0;
+//     let xCopy = num;//creating a copy of original number
+
+//     if(num < 0){
+//         return false;
+//     }
+//     while(num > 0){
+//         let rem = num % 10;
+//         rev = (10 * rev)+ rem;
+//         num = Math.floor(num / 10 )
+//     }
+//     if(rev === xCopy) return "palindrome";
+//     else return "Not a palindrome";
+
+//     return rev === xCopy;
+
+// }
+// console.log(palindromeNum(1334331))
+
+// Reverse a Number
+  function NmuberReverse(num){
+    let rev =0;
+let xCopy = num;
+num = Math.abs(num);
+    while(num > 0){
+        let rem = num % 10;
+        rev = (rev * 10)+ rem;
+        num =Math.floor(num / 10);
+    }
+    return rev;
+  }
+  console.log(NmuberReverse(-123))
+
