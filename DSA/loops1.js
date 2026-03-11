@@ -71,27 +71,39 @@
 // console.log(smallestNum([1,2,4,3,9,5,-1,0]))
  
 // 5. Second Largest Program
-function secondLargest(arr){
-    let largest =-Infinity;
-    let secondLargest =-Infinity;
-    if(arr.length < 2) {
-        return null;
-    }
-    for (let i = 0; i < arr.length; i++) {
+// function secondLargest(arr){
+//     let largest =-Infinity;
+//     let secondLargest =-Infinity;
+//     if(arr.length < 2) {
+//         return null;
+//     }
+//     for (let i = 0; i < arr.length; i++) {
       
-        if(arr[i]> largest){
-            secondLargest =largest;
-            largest =arr[i];
-        }
-        else if(arr[i] > secondLargest && arr[i]!= largest){
-            secondLargest =arr[i];
-        }
-    }
-    return secondLargest;
-}
-// let arr =[10,3,5,8,9,2,-1,0,1];
-// let arr =[10];
-let arr =[10,2]
+//         if(arr[i]> largest){
+//             secondLargest =largest;
+//             largest =arr[i];
+//         }
+//         else if(arr[i] > secondLargest && arr[i]!= largest){
+//             secondLargest =arr[i];
+//         }
+//     }
+//     return secondLargest;
+// }
+// // let arr =[10,3,5,8,9,2,-1,0,1];
+// // let arr =[10];
+// let arr =[10,2]
 
-let res =secondLargest(arr);
-console.log(res);
+// let res =secondLargest(arr);
+// console.log(res);
+// Day-2
+//count the number of digits
+
+// function digitCount(num){
+//     let count =0;
+//     while(num > 0){
+//         num = Math.floor(num / 10 );
+//         count++;
+//     }
+//     return count;
+// }
+// console.log(digitCount(245))
