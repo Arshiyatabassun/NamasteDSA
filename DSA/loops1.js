@@ -129,11 +129,11 @@
 // }
 // console.log(palindromeNum(1334331))
 
-// Reverse a Number
+//3. Reverse a Number
   function NmuberReverse(num){
     let rev =0;
 let xCopy = num;
-num = Math.abs(num);
+num = Math.abs(num);//converting -ve numbers to  +ve
     while(num > 0){
         let rem = num % 10;
         rev = (rev * 10)+ rem;
