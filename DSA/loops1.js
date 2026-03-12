@@ -130,16 +130,31 @@
 // console.log(palindromeNum(1334331))
 
 //3. Reverse a Number
-  function NmuberReverse(num){
-    let rev =0;
-let xCopy = num;
-num = Math.abs(num);//converting -ve numbers to  +ve
-    while(num > 0){
-        let rem = num % 10;
-        rev = (rev * 10)+ rem;
-        num =Math.floor(num / 10);
+//   function NmuberReverse(num){
+//     let rev =0;
+// let xCopy = num;
+// num = Math.abs(num);//converting -ve numbers to  +ve
+//     while(num > 0){
+//         let rem = num % 10;
+//         rev = (rev * 10)+ rem;
+//         num =Math.floor(num / 10);
+//     }
+//     return rev;
+//   }
+//   console.log(NmuberReverse(-123))
+// 4.Remove the duplicate from a sorted Array
+
+function remvDuplicates(arr){
+let x = 0;
+for(let i =0;i <arr.length;i++){
+    if(arr[i] > arr[x]){
+        x =x + 1;
+        arr[x]=arr[i];
+
     }
-    return rev;
-  }
-  console.log(NmuberReverse(-123))
+}
+return x+1;
+}
+
+console.log(remvDuplicates([0,0,1,2,2,2,3,3,3,4]))
 
